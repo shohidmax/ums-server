@@ -8,7 +8,7 @@ const port = process.env.PORT || 3005;
 app.use(cors());
 app.use(express.json());
 
-const uri = `mongodb+srv://$umsdubai:1Tieyhtu1IRJR0rI@ums.b2w96to.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://umsdubai:1Tieyhtu1IRJR0rI@ums.b2w96to.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
@@ -70,7 +70,7 @@ run().catch(console.dir);
 
 app.get("/", (req, res) => {
   res.send(`<h1 style="text-align: center;
-      color: red;"> Server is Running at <span style="color: Blue;">${port}</span></h1>`);
+      color: red;"> UMS Server is Running at <span style="color: Blue;">${port}</span></h1>`);
 });
 
 app.listen(port, () => {
