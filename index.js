@@ -1,13 +1,14 @@
 const express = require('express');
 const cors = require('cors'); 
+const bodyParser = require('body-parser');
 require('dotenv').config();
 const { MongoClient, ServerApiVersion, ObjectId, ISODate } = require('mongodb');
 const app = express();
-const port = process.env.PORT || 3005;
+const port = process.env.PORT || 3009;
 
 app.use(cors());
 app.use(express.json());
-
+app.use(bodyParser.json());
 const uri = `mongodb+srv://umsdubai:1Tieyhtu1IRJR0rI@ums.b2w96to.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
@@ -16,6 +17,7 @@ async function run() {
     await client.connect();
     console.log('db connected');
     const usersCollection = client.db('ums1').collection('user'); 
+    const arduino = client.db('ums1').collection('arduino'); 
 
 
 
@@ -25,13 +27,33 @@ async function run() {
       const hold = await cursor.toArray();
       res.send(hold);
     });
+    app.get('/led', async (req, res) => {
+      const query = {};
+      const cursor = arduino.find(query); 
+      const hold = await cursor.toArray();
+      res.send(hold);
+    });
     app.post('/api/users', async (req, res) => {
       const adduser = req.body; 
       const result = await usersCollection.insertOne(adduser);
       res.send(result)
     });
-  
+    app.post('/led', async (req, res) => {
+      const data = req.body; 
+      console.log(data); 
+      
+      const result = await arduino.insertOne(data);
+      console.log(result);
+      res.send({"status":"ok"});
+    }); 
 
+    app.post('/led2', (req, res) => {
+      const aaa = req.body;   
+      console.log( aaa); 
+      res.json({"status":"ok"});
+  });
+  
+ 
 
     app.put('/api/data/:id', async (req, res) => {
       const id = req.params.id;
