@@ -17,6 +17,7 @@ async function run() {
     await client.connect();
     console.log('db connected');
     const usersCollection = client.db('ums1').collection('user'); 
+    const tempCollection = client.db('ums1').collection('temp'); 
     const arduino = client.db('ums1').collection('arduino'); 
 
 
@@ -32,10 +33,17 @@ async function run() {
       const cursor = arduino.find(query); 
       const hold = await cursor.toArray();
       res.send(hold);
+    console.log('hold get'); 
+
     });
     app.post('/api/users', async (req, res) => {
       const adduser = req.body; 
       const result = await usersCollection.insertOne(adduser);
+      res.send(result)
+    });
+    app.post('/api/temp', async (req, res) => {
+      const adduser = req.body; 
+      const result = await tempCollection.insertOne(adduser);
       res.send(result)
     });
     app.post('/led', async (req, res) => {

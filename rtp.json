@@ -1,0 +1,115 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+    {
+    "type": "Feature",
+    "geometry": {
+    "type": "Point",
+    "coordinates": [
+    90.4111451,
+    23.7115253
+    ]
+    },
+    "properties": {
+    "id": "1",
+    "division_id": "3",
+    "name": "Dhaka",
+    "bn_name": "ঢাকা",
+    "lat": "23.7115253tttt",
+    "long": "90.4111451 ddfd",
+    "municipalityData" : [
+        {
+          "Region": "Dhaka",
+          "District": "Dhaka",
+          "Municipality_Name": "Dohar",
+          "Mayor": "Md. Almas Uddin",
+          "Website": "https:\/\/doharmunicipality.gov.bd\/",
+          "Email": "doharpourashava@gmail.com",
+          "Contact Number": "88027768116 , 88027768117",
+          "Emeregency_Contact_Number ": "01790507004 ( Mayor)"
+        },
+        {
+          "Municipality_Name": "Dhamrai",
+          "Mayor": "Hazi Golam Kabir",
+          "Website": "https:\/\/dhamrai.dhaka.gov.bd\/bn\/site\/page\/RspF-%E0%A6%8F%E0%A6%95-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%87-%E0%A6%AA%E0%A7%8C%E0%A6%B0%E0%A6%B8%E0%A6%AD%E0%A6%BE",
+          "Email": "makkacity56@gmail.com",
+          "Contact Number": 27730078,
+          "Emeregency_Contact_Number ": "01714208417 ( Mayor)"
+        },
+        {
+          "Municipality_Name": "Savar",
+          "Mayor": "Hazi Md. Abdul Goni",
+          "By the Date of Adoption": "02-02-2021",
+          "Date of Taking Office": "10-02-2021",
+          "Website": "http:\/\/www.savarmunicipality.gov.bd\/",
+          "Email": "mayor.savarmunicipality@gmail.com",
+          "Contact Number": 1716163893,
+          "Emeregency_Contact_Number ": 1727209465
+        }
+      ]
+    }
+    },
+    {
+    "type": "Feature",
+    "geometry": {
+    "type": "Point",
+    "coordinates": [
+    89.8429406,
+    23.6070822
+    ]
+    },
+    "properties": {
+    "id": "2",
+    "division_id": "3",
+    "name": "Faridpur",
+    "bn_name": "ফরিদপুর",
+    "lat": "23.6070822",
+    "long": "89.8429406",
+    "municipalityData" : [
+        {
+         "Region": "Faridpur",
+         "District": "Faridpur",
+         "Municipality_Name": "Bhanga",
+         "Mayor": "Abu Foyez Mohammad Reza",
+         "Website": "https:\/\/bhanga.faridpur.gov.bd\/en\/site\/page\/YhRc-%E0%A6%8F%E0%A6%95-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%87-%E0%A6%AA%E0%A7%8C%E0%A6%B0%E0%A6%B8%E0%A6%AD%E0%A6%BE",
+         "Contact Number": "06323-56283 , 01716-226655 (CEO)",
+         "Emeregency_Contact_Number ": "01756936990 (Mayor)"
+        },
+        {
+         "Municipality_Name": "Madhukhali",
+         "Mayor": "Khondoker Morshed Rahman",
+         "Website": "https:\/\/madhukhalipaurashava.gov.bd\/",
+         "Email": "madhukhalipaurashava@yahoo.com",
+         "Contact Number": 880632566006,
+         "Emeregency_Contact_Number ": 1716236256
+        },
+        {
+         "Municipality_Name": "Alfadanga"
+        },
+        {
+         "Municipality_Name": "Faridpur",
+         "Mayor": "Amitav Bose",
+         "Website": "https:\/\/faridpurmunicipality.gov.bd\/",
+         "Contact Number": "01757811910 (Hotline)",
+         "Emeregency_Contact_Number ": "01733152695 (Mayor)"
+        },
+        {
+         "Municipality_Name": "Boalmari ",
+         "Mayor": "Md. Selim Reza Lipon",
+         "Website": "https:\/\/boalmari.faridpur.gov.bd\/bn\/site\/page\/BdXa-%E0%A6%8F%E0%A6%95-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A7%87-%E0%A6%AC%E0%A7%8B%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%80-%E0%A6%AA%E0%A7%8C%E0%A6%B0%E0%A6%B8%E0%A6%AD%E0%A6%BE",
+         "Contact Number": "01710410151 (Computer Operator)",
+         "Emeregency_Contact_Number ": "01713517971 (Mayor)"
+        },
+        {
+         "Municipality_Name": "Nagarkanda",
+         "Mayor": "Nimai Chandra Sarker ",
+         "Website": "https:\/\/nagarkanda.faridpur.gov.bd\/bn\/site\/leaders\/WKdP-%E0%A6%A8%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%87-%E0%A6%9A%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0",
+         "Contact Number": 1711001824,
+         "Emeregency_Contact_Number ": 1711001824
+        }
+           ]
+    }
+    
+    }
+    ]
+    }
